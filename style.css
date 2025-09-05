@@ -6,7 +6,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line
     display: flex;
     gap: 16px;
     justify-content: center;
-    background: #f1f5f9;
+    background: #6b0113f5;
     padding: 12px;
 }
 .nav a {
