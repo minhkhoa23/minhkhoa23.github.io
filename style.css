@@ -10,7 +10,7 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line
     padding: 12px;
 }
 .nav a {
-    color: #fff;
+    color: var(--fg);
     text-decoration: none;
 }
 .container { max-width: var(--maxw); margin: 0 auto; padding: 20px; }
