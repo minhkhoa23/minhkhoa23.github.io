@@ -36,7 +36,8 @@ pre { padding: 12px; overflow: auto; }
 }
 
 .three-steps img {
-  width: 150px;              /* chỉnh kích thước phù hợp */
-  height: 300px;
-  border-radius: 12px;       /* bo góc nhẹ cho đẹp */
+  width: auto;              /* cho tự tính theo tỉ lệ */
+  height: 150px;            /* cố định chiều cao */
+  object-fit: cover;        /* cắt bớt cho ảnh cân đối */
+  border-radius: 12px;      /* bo góc nếu muốn */
 }
