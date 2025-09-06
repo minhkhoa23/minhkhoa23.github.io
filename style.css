@@ -27,3 +27,21 @@ footer { border-top: 1px solid #eee; margin-top: 40px; padding: 20px; color: var
 img { max-width: 100%; height: auto; border-radius: 10px; }
 code, pre { background: #f6f8fa; border-radius: 8px; padding: 2px 6px; }
 pre { padding: 12px; overflow: auto; }
+
+.three-steps {
+  display: flex;              /* xếp ngang */
+  justify-content: center;    /* căn giữa cả cụm */
+  gap: 40px;                  /* khoảng cách giữa các hình */
+  margin-top: 20px;           /* cách đoạn trên 1 chút */
+}
+
+.step {
+  text-align: center;         /* căn chữ giữa dưới hình */
+  max-width: 200px;           /* giới hạn chiều rộng mỗi cột */
+}
+
+.step img {
+  width: 100px;               /* chỉnh kích thước hình */
+  height: auto;
+  border-radius: 12px;        /* bo góc nhẹ nếu thích */
+}
