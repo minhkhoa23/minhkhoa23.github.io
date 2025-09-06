@@ -41,3 +41,18 @@ pre { padding: 12px; overflow: auto; }
   object-fit: cover;        /* cắt bớt cho ảnh cân đối */
   border-radius: 12px;      /* bo góc nếu muốn */
 }
+
+/* Khi màn hình nhỏ (điện thoại) */
+@media (max-width: 768px) {
+  .three-steps {
+    overflow-x: auto;     /* cho phép cuộn ngang */
+    scroll-snap-type: x mandatory; /* hỗ trợ cuộn mượt từng ảnh */
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start;  /* căn từ trái */
+  }
+
+  .three-steps img {
+    flex: 0 0 90%;        /* mỗi ảnh chiếm ~90% chiều rộng màn hình */
+    scroll-snap-align: center;
+  }
+}
