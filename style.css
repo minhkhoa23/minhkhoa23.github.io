@@ -29,19 +29,14 @@ code, pre { background: #f6f8fa; border-radius: 8px; padding: 2px 6px; }
 pre { padding: 12px; overflow: auto; }
 
 .three-steps {
-  display: flex;              /* xếp ngang */
-  justify-content: center;    /* căn giữa cả cụm */
-  gap: 40px;                  /* khoảng cách giữa các hình */
-  margin-top: 20px;           /* cách đoạn trên 1 chút */
+  display: flex;             /* xếp ngang */
+  justify-content: center;   /* căn giữa */
+  gap: 30px;                 /* khoảng cách giữa các ảnh */
+  margin-top: 20px;          /* cách đoạn trên */
 }
 
-.step {
-  text-align: center;         /* căn chữ giữa dưới hình */
-  max-width: 200px;           /* giới hạn chiều rộng mỗi cột */
-}
-
-.step img {
-  width: 100px;               /* chỉnh kích thước hình */
+.three-steps img {
+  width: 150px;              /* chỉnh kích thước phù hợp */
   height: auto;
-  border-radius: 12px;        /* bo góc nhẹ nếu thích */
+  border-radius: 12px;       /* bo góc nhẹ cho đẹp */
 }
