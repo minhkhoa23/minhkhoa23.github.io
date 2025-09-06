@@ -10,8 +10,11 @@ body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line
     padding: 16px;
 }
 .nav a {
-    color: var(--fg);
+    color: #fff;
     text-decoration: none;
+}
+.nav a:visited {
+    color: #fff
 }
 .container { max-width: var(--maxw); margin: 0 auto; padding: 20px; }
 .post-list { display: grid; gap: 20px; padding: 0; list-style: none; }
