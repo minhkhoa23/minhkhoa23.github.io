@@ -1,31 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Xin chào GitHub Pages</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#faf8f3" />
+  <title>Xin chào GitHub Pages — Khoa's Journal</title>
+  <meta name="description" content="Bài viết đầu tiên trên blog tĩnh GitHub Pages của Thái Minh Khoa." />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="/style.css" />
-  <meta name="description" content="Bài viết đầu tiên trên blog tĩnh GitHub Pages." />
+  <script src="/script.js" defer></script>
 </head>
-<body>
-  <main class="container post">
-    <a href="/">← Quay lại Trang chủ</a>
-    <h1>Xin chào GitHub Pages</h1>
-    <div class="meta">Đăng ngày 05/09/2025 • #hello #github-pages</div>
+<body class="article-page">
+  <a class="skip-link" href="#article">Bỏ qua điều hướng</a>
+  <header class="article-nav">
+    <nav class="nav shell" aria-label="Điều hướng bài viết">
+      <a class="brand" href="/">Khoa's <span>Journal</span></a>
+      <div class="nav-actions">
+        <a class="back-link" href="/#posts">← Tất cả bài viết</a>
+        <button class="icon-button" type="button" data-theme-toggle aria-label="Chuyển sang giao diện tối">
+          <svg class="moon-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+          <svg class="sun-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
 
-    <p>Đây là bài viết đầu tiên của mình.</p>
+  <main class="article-shell" id="article">
+    <header class="article-header">
+      <p class="article-kicker">Nhật ký · Web</p>
+      <h1>Xin chào GitHub Pages</h1>
+      <p class="article-subtitle">Bài viết đầu tiên và lý do mình chọn bắt đầu bằng một blog tĩnh.</p>
+      <div class="article-meta"><time datetime="2025-09-05">05.09.2025</time><span>·</span><span>2 phút đọc</span><span>·</span><span>#hello #github-pages</span></div>
+    </header>
 
-    <h2>Tại sao chọn blog tĩnh?</h2>
-    <ul>
-      <li>⚡ Nhanh và đơn giản</li>
-      <li>🛡️ Bảo trì dễ, ít lỗi</li>
-      <li>🆓 Miễn phí với GitHub Pages</li>
-    </ul>
+    <figure class="article-cover"><img src="/assets/images/anh2.jpg" alt="Một buổi sinh hoạt trong lớp học" /></figure>
 
-    <h2>Chèn code</h2>
-    <pre><code>console.log("Hello GitHub Pages!")</code></pre>
+    <article class="article-content">
+      <p>Đây là bài viết đầu tiên của mình. Blog nhỏ này là nơi mình tập ghi lại những điều đã học, những việc đã làm và các ý tưởng vẫn còn đang dang dở.</p>
 
-    <p>Cảm ơn đã đọc! <a href="/">Quay lại</a>.</p>
+      <h2>Tại sao chọn blog tĩnh?</h2>
+      <ul>
+        <li>Nhanh và đơn giản.</li>
+        <li>Dễ bảo trì, ít thành phần có thể gặp lỗi.</li>
+        <li>Miễn phí với GitHub Pages.</li>
+      </ul>
+
+      <h2>Chèn code</h2>
+      <pre><code>console.log("Hello GitHub Pages!")</code></pre>
+
+      <p>Cảm ơn bạn đã ghé đọc. Mình sẽ tiếp tục hoàn thiện nơi này từng chút một.</p>
+    </article>
+
+    <footer class="article-footer"><a href="/">← Trang chủ</a><a href="/posts/bai-viet-2.html">Bài tiếp theo →</a></footer>
   </main>
 </body>
 </html>
