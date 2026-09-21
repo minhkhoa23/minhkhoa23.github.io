@@ -29,10 +29,9 @@
       <ul class="nav-links" id="primary-nav">
         <li><a href="#home">Trang chủ</a></li>
         <li><a href="#about">Giới thiệu</a></li>
-        <li><a href="#posts">Bài viết</a></li>
+        <li><a href="#posts">Bài viết &amp; chuyện</a></li>
         <li><a href="#courses">Môn học</a></li>
         <li><a href="#notes">Ghi chú</a></li>
-        <li><a href="#stories">Câu chuyện</a></li>
         <li><a href="#novels">Tiểu thuyết</a></li>
       </ul>
 
@@ -145,8 +144,9 @@
     <section class="section section-alt" id="posts" aria-labelledby="posts-title">
       <div class="shell">
         <header class="section-heading reveal">
-          <span>02</span><i></i><h2 id="posts-title">Bài viết nổi bật</h2>
+          <span>02</span><i></i><h2 id="posts-title">Bài viết &amp; câu chuyện</h2>
         </header>
+        <p class="section-intro reveal">Từ ghi chú công nghệ đến những lát cắt đời sinh viên — tất cả được lưu lại trong cùng một không gian viết.</p>
 
         <a class="featured-post card reveal" href="/posts/2025-09-05-xin-chao.html" data-search-item data-search-title="Xin chào GitHub Pages blog tĩnh bài viết đầu tiên">
           <div class="featured-media"><img src="/assets/images/anh2.jpg" alt="Một buổi hoạt động của sinh viên trong lớp học" /></div>
@@ -190,6 +190,27 @@
             </div>
           </a>
         </div>
+
+        <div class="stories-subsection" id="stories">
+          <header class="stories-heading reveal">
+            <div>
+              <span>GÓC NHẬT KÝ</span>
+              <h3>Chuyện dọc đường</h3>
+            </div>
+            <p>Những phần của đời sinh viên không nằm trong CV.</p>
+          </header>
+
+          <article class="story-feature card reveal" data-search-item data-search-title="Một ngày mang máy ảnh đến trường câu chuyện sinh viên">
+            <div class="story-image"><img src="/assets/images/anh1.jpg" alt="Khoa với máy ảnh trong khuôn viên trường" /><span>Nhiếp ảnh</span></div>
+            <div class="story-copy"><small>ĐANG VIẾT · NHẬT KÝ CÁ NHÂN</small><h3>Một ngày mang máy ảnh đến trường</h3><p>Đôi khi cách tốt nhất để ghi nhớ một ngày bình thường là nhìn nó chậm lại qua khung ngắm.</p><span class="text-link">Câu chuyện đang được hoàn thiện <b aria-hidden="true">✦</b></span></div>
+          </article>
+
+          <div class="story-grid">
+            <article class="story-card card reveal"><img src="/assets/images/anh2.jpg" alt="Sinh viên trao đổi trong lớp học" /><div><small>BẠN BÈ</small><h3>Những cuộc trò chuyện sau giờ học</h3><p>Có những điều không nằm trong giáo trình nhưng vẫn theo mình rất lâu.</p></div></article>
+            <article class="story-card card reveal"><div class="story-gradient story-gradient-one" aria-hidden="true"></div><div><small>DỰ ÁN</small><h3>Làm một thứ chưa ai dùng</h3><p>Về bản thử đầu tiên, những lỗi ngớ ngẩn và lý do vẫn tiếp tục.</p></div></article>
+            <article class="story-card card reveal"><img src="/assets/images/anh3.jpg" alt="Khoa trong một chuyến đi ngoài trời" /><div><small>SUY NGẪM</small><h3>Một ngày đi xa khỏi màn hình</h3><p>Đôi lúc câu trả lời đến khi mình thôi nhìn vào đoạn code.</p></div></article>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -200,44 +221,40 @@
         </header>
         <p class="section-intro reveal">Một nơi để hệ thống lại kiến thức, tài liệu và cảm nhận cá nhân sau mỗi môn. Nội dung chi tiết đang được mình biên soạn.</p>
 
-        <div class="filter-row reveal" role="group" aria-label="Lọc môn học">
-          <button type="button" class="filter-button is-active" data-course-filter="all">Tất cả</button>
-          <button type="button" class="filter-button" data-course-filter="programming">Lập trình</button>
-          <button type="button" class="filter-button" data-course-filter="math">Toán</button>
-          <button type="button" class="filter-button" data-course-filter="ai">AI</button>
-          <button type="button" class="filter-button" data-course-filter="general">Đại cương</button>
+        <div class="course-toolbar reveal">
+          <label class="course-search">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.35-4.35"></path></svg>
+            <span class="sr-only">Tìm môn học</span>
+            <input type="search" data-course-search placeholder="Tìm theo mã hoặc tên môn học…" autocomplete="off" />
+          </label>
+
+          <div class="course-view-controls">
+            <p><strong data-course-count>44</strong> môn học</p>
+            <div class="view-switch" role="group" aria-label="Kiểu hiển thị môn học">
+              <button type="button" class="is-active" data-course-view="grid" aria-pressed="true" aria-label="Hiển thị dạng ô">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect><rect x="14" y="14" width="7" height="7" rx="1"></rect></svg>
+                <span>Dạng ô</span>
+              </button>
+              <button type="button" data-course-view="list" aria-pressed="false" aria-label="Hiển thị dạng danh sách">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13"></path><circle cx="3.5" cy="6" r=".8"></circle><circle cx="3.5" cy="12" r=".8"></circle><circle cx="3.5" cy="18" r=".8"></circle></svg>
+                <span>Danh sách</span>
+              </button>
+            </div>
+          </div>
         </div>
 
-        <div class="course-grid">
-          <article class="course-card card reveal" data-course="programming">
-            <button type="button" class="course-summary" aria-expanded="false">
-              <span><small>LẬP TRÌNH · ĐANG BIÊN SOẠN</small><strong>Cơ sở lập trình</strong></span>
-              <i aria-hidden="true"></i>
-            </button>
-            <div class="course-tags"><span>Thực hành nhiều</span><span>Nền tảng</span></div>
-            <div class="tag-list compact"><span>Tư duy thuật toán</span><span>Debug</span><span>Cú pháp</span></div>
-            <div class="course-detail" hidden><p>Mục ghi chú, tài liệu hữu ích và những điều mình rút ra sau môn học sẽ xuất hiện tại đây.</p></div>
-          </article>
+        <div class="filter-row course-filters reveal" role="group" aria-label="Lọc nhóm môn học">
+          <button type="button" class="filter-button is-active" data-course-filter="all">Tất cả</button>
+          <button type="button" class="filter-button" data-course-filter="general">Đại cương</button>
+          <button type="button" class="filter-button" data-course-filter="foundation">Cơ sở ngành</button>
+          <button type="button" class="filter-button" data-course-filter="specialized">Chuyên ngành</button>
+        </div>
 
-          <article class="course-card card reveal" data-course="programming">
-            <button type="button" class="course-summary" aria-expanded="false">
-              <span><small>LẬP TRÌNH · ĐANG BIÊN SOẠN</small><strong>Cấu trúc dữ liệu &amp; giải thuật</strong></span>
-              <i aria-hidden="true"></i>
-            </button>
-            <div class="course-tags"><span>Thiên về lý thuyết</span><span>Thử thách</span></div>
-            <div class="tag-list compact"><span>Cấu trúc dữ liệu</span><span>Độ phức tạp</span><span>Giải thuật</span></div>
-            <div class="course-detail" hidden><p>Mục ghi chú, tài liệu hữu ích và những điều mình rút ra sau môn học sẽ xuất hiện tại đây.</p></div>
-          </article>
-
-          <article class="course-card card reveal" data-course="ai math">
-            <button type="button" class="course-summary" aria-expanded="false">
-              <span><small>AI · ĐANG KHÁM PHÁ</small><strong>Nhập môn trí tuệ nhân tạo</strong></span>
-              <i aria-hidden="true"></i>
-            </button>
-            <div class="course-tags"><span>Định hướng dự án</span><span>Ứng dụng</span></div>
-            <div class="tag-list compact"><span>Tìm kiếm</span><span>Học máy</span><span>Dữ liệu</span></div>
-            <div class="course-detail" hidden><p>Mục ghi chú, tài liệu hữu ích và những điều mình rút ra sau môn học sẽ xuất hiện tại đây.</p></div>
-          </article>
+        <div class="course-catalog" data-course-catalog data-view="grid" aria-live="polite"></div>
+        <p class="course-empty" data-course-empty hidden>Không tìm thấy môn học phù hợp.</p>
+        <div class="course-more" data-course-more-wrap>
+          <p>Đang hiển thị <strong data-course-visible>12</strong>/<span data-course-total>44</span> môn</p>
+          <button type="button" data-course-more>Xem thêm 12 môn <span aria-hidden="true">↓</span></button>
         </div>
       </div>
     </section>
@@ -301,26 +318,6 @@
             <b aria-hidden="true">·</b>
           </article>
           <p class="empty-state" data-notes-empty hidden>Chưa có ghi chú phù hợp với từ khóa này.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="stories" aria-labelledby="stories-title">
-      <div class="shell">
-        <header class="section-heading reveal">
-          <span>06</span><i></i><h2 id="stories-title">Chuyện dọc đường</h2>
-        </header>
-        <p class="section-intro reveal">Những phần của đời sinh viên không nằm trong CV.</p>
-
-        <article class="story-feature card reveal" data-search-item data-search-title="Một ngày mang máy ảnh đến trường câu chuyện sinh viên">
-          <div class="story-image"><img src="/assets/images/anh1.jpg" alt="Khoa với máy ảnh trong khuôn viên trường" /><span>Nhiếp ảnh</span></div>
-          <div class="story-copy"><small>ĐANG VIẾT · NHẬT KÝ CÁ NHÂN</small><h3>Một ngày mang máy ảnh đến trường</h3><p>Đôi khi cách tốt nhất để ghi nhớ một ngày bình thường là nhìn nó chậm lại qua khung ngắm.</p><span class="text-link">Câu chuyện đang được hoàn thiện <b aria-hidden="true">✦</b></span></div>
-        </article>
-
-        <div class="story-grid">
-          <article class="story-card card reveal"><img src="/assets/images/anh2.jpg" alt="Sinh viên trao đổi trong lớp học" /><div><small>BẠN BÈ</small><h3>Những cuộc trò chuyện sau giờ học</h3><p>Có những điều không nằm trong giáo trình nhưng vẫn theo mình rất lâu.</p></div></article>
-          <article class="story-card card reveal"><div class="story-gradient story-gradient-one" aria-hidden="true"></div><div><small>DỰ ÁN</small><h3>Làm một thứ chưa ai dùng</h3><p>Về bản thử đầu tiên, những lỗi ngớ ngẩn và lý do vẫn tiếp tục.</p></div></article>
-          <article class="story-card card reveal"><img src="/assets/images/anh3.jpg" alt="Khoa trong một chuyến đi ngoài trời" /><div><small>SUY NGẪM</small><h3>Một ngày đi xa khỏi màn hình</h3><p>Đôi lúc câu trả lời đến khi mình thôi nhìn vào đoạn code.</p></div></article>
         </div>
       </div>
     </section>
